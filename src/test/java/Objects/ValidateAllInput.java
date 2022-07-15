@@ -17,6 +17,7 @@ public class ValidateAllInput {
     }
 
     public void enterValueAndClick (String locator, String value) {
+        driver.findElement(By.name(locator)).clear();
         driver.findElement(By.name(locator)).sendKeys(value);
         WebElement lastInput = driver.findElement(By.name("user[custom_field_values][3]"));
         String elem = lastInput.getAttribute("value");

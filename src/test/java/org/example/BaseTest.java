@@ -26,7 +26,7 @@ public class BaseTest {
         }
    }
 
-//    @Test
+    @Test
     public void homeLink () {
         Link page = new Link(driver);
         page.clickLink("//*[@id=\"top-menu\"]/ul/li[2]/a");
@@ -34,7 +34,7 @@ public class BaseTest {
         driver.navigate().back();
     }
 
-//   @Test
+   @Test
     public void projectsLink () {
        Link page = new Link(driver);
        page.clickLink("//*[@id=\"top-menu\"]/ul/li[2]/a");
@@ -42,7 +42,7 @@ public class BaseTest {
        driver.navigate().back();
    }
 
-//    @Test
+    @Test
     public void helpLink () {
         Link page = new Link(driver);
         page.clickLink("//*[@id=\"top-menu\"]/ul/li[3]/a");
@@ -50,7 +50,7 @@ public class BaseTest {
         driver.navigate().back();
     }
 
-//    @Test
+    @Test
     public void loginLink () {
         Link page = new Link(driver);
         page.clickLink("//*[@id=\"account\"]/ul/li[1]/a");
@@ -58,7 +58,7 @@ public class BaseTest {
         driver.navigate().back();
     }
 
-//    @Test
+    @Test
     public void searchLink () {
         Link page = new Link(driver);
         page.clickLink("//*[@id=\"quick-search\"]/form/label/a");
@@ -66,43 +66,43 @@ public class BaseTest {
         driver.navigate().back();
     }
 
-//    @Test
+    @Test
     public void inputLogin () {
         InputCheck page = new InputCheck(driver);
         page.enterValueAndCheck("user[login]");
     }
 
-//    @Test
+    @Test
     public void inputPassword () {
         InputCheck page = new InputCheck(driver);
         page.enterValueAndCheck("user[password]");
     }
 
-//    @Test
+    @Test
     public void inputConfirmation () {
         InputCheck page = new InputCheck(driver);
         page.enterValueAndCheck("user[password_confirmation]");
     }
 
-//    @Test
+    @Test
     public void inputFirstName () {
         InputCheck page = new InputCheck(driver);
         page.enterValueAndCheck("user[firstname]");
     }
 
-//    @Test
+    @Test
     public void inputLastName () {
         InputCheck page = new InputCheck(driver);
         page.enterValueAndCheck("user[lastname]");
     }
 
-//    @Test
+    @Test
     public void inputEmail () {
         InputCheck page = new InputCheck(driver);
         page.enterValueAndCheck("user[mail]");
     }
 
-//    @Test
+    @Test
     public void inputIrcNick () {
         InputCheck page = new InputCheck(driver);
         page.enterValueAndCheck("user[custom_field_values][3]");
