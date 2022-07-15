@@ -28,7 +28,6 @@ public class ValidateAllInput {
 
         public void checkAndScreenshot () {
             Boolean isPresent = driver.findElements(By.id("errorExplanation")).size() > 0;
-//        System.out.println(isPresent);
             if (isPresent == true) {
                 File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
                 try {
